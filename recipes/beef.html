@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!-- Created on Nov 25, 2018 1:06:38 PM -->
+
+<html lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>
+      Young Ohana Recipes - Beef
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/w3.css">
+  </head>
+  
+  <body>
+    <div class="w3-bar w3-black">
+    <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="beef.html" class="w3-bar-item w3-button">Beef</a>
+    <a href="chicken.html" class="w3-bar-item w3-button">Chicken</a>
+    <a href="pork.html" class="w3-bar-item w3-button">Pork</a>
+    <a href="#Sides" class="w3-bar-item w3-button">Sides</a>
+    <a href="#Desserts" class="w3-bar-item w3-button">Desserts</a>
+    </div>
+    
+    <div class="w3-container">
+    
+    <header align="center">
+    <h2>Young Ohana Recipes - Beef</h2>
+    <img src="../images/Yang1275.jpg" width="150" height="150" title="" alt="Young Ohana">
+    </header>
+    
+  <button onclick="myFunction('Beef Tomato')" class="w3-btn w3-block w3-black w3-left-align">Beef Tomato</button>
+  <div id="Beef Tomato" class="w3-container w3-hide">
+  <h4>Beef Tomato</h4>
+      <ul>
+  <li>1 lb top sirloin, sliced</li>
+  <li>1 clove garlic, minced</li>
+  <li>4 tomatoes, wedged</li>
+  <li>1 bell pepper, sliced</li>
+  <li>1 onion, sliced</li>
+  <li>3 tbsp Kikkoman® Soy Sauce (shoyu)</li>
+  <li>2 tsp sugar</li>
+  <li>1 tbsp cornstarch</li>
+  <li>a squeeze of lemon juice</li>
+  <li>1 tbsp water</li>
+</ul>
+
+  <p>Saute steak with garlic on medium heat until steak is cooked through. Remove steak from pan. Saute tomatoes and onion until tender. Return steak to pan. Mix shoyu, sugar, cornstarch, lemon juice, and water until smooth. Add to pan and simmer until glossy.</p>
+
+  <p>Serve with rice.</p>
+
+  <p>Note: May replace tomatoes with broccoli, Chinese peas, snap peas or other vegetables.</p>
+  </div>
+
+  <button onclick="myFunction('Corned Beef Brisket')" class="w3-btn w3-block w3-black w3-left-align">Corned Beef Brisket</button>
+  <div id="Corned Beef Brisket" class="w3-container w3-hide">
+  <h4>Corned Beef Brisket</h4>
+  <ul>
+  <li>3-5 lbs corned beef brisket, rinsed</li>
+  <li>3-5 potatoes, peeled and cut into 2" slices</li>
+  <li>1 head cabbage, cut into 2" wedges</li>
+  <li>1-2 cans asparagus</li>
+  <li>1 bay leaf</li>
+  <li>sprinkle of oregano</li>
+  <li>sprinkle peppercorns</li>
+  <li>sprinkle of thyme</li>
+  </ul>
+
+  <p>Cover brisket with water in a large pot or casserole. Add spices. Bring water to a boil and remove from heat. Wipe the inside of pot or casserole with a paper towel, being careful not to burn your fingers. Return pot to heat and simmer for 45 minutes per pound. Before the last 45 minutes of cooking time, adjust soup for saltiness by removing liquid and adding water if necessary. Add potatoes for the last 45 minutes of cooking time and the cabbage and asparagus for the last 15 minutes of cooking time.</p>
+
+  <p>Serve with rice.</p>
+  </div>
+
+  <button onclick="myFunction('Cowboy Stew')" class="w3-btn w3-block w3-black w3-left-align">Cowboy Stew</button>
+  <div id="Cowboy Stew" class="w3-container w3-hide">
+  <h4>Cowboy Stew</h4>
+  <ul>
+  <li>1 ¼ lb. stew meat, cut in 1" cubes</li>
+  <li>4 medium unpeeled potatoes, cut in 1" cubes</li>
+  <li>1 medium onion, diced</li>
+  <li>1 can (28 oz) barbecue flavored baked beans</li>
+  </ul>
+
+  <p>Combine ingredients in crockpot. Cook for 8-10 hours, or until meat is tender.</p>
+  </div>
+ 
+ 
+     <footer align="center">
+    <h2>Young Ohana Recipes - Beef</h2>
+    </footer>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+  </body>
+</html>
