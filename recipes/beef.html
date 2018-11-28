@@ -29,7 +29,7 @@
     <img src="../images/Yang1275.jpg" width="150" height="150" title="" alt="Young Ohana">
     </header>
     
-  <button onclick="myFunction('Beef Tomato')" class="w3-btn w3-block w3-black w3-left-align">Beef Tomato</button>
+  <button onclick="myAccordion('Beef Tomato')" class="w3-btn w3-block w3-black w3-left-align">Beef Tomato</button>
   <div id="Beef Tomato" class="w3-container w3-hide">
   <h4>Beef Tomato</h4>
       <ul>
@@ -52,7 +52,7 @@
   <p>Note: May replace tomatoes with broccoli, Chinese peas, snap peas or other vegetables.</p>
   </div>
 
-  <button onclick="myFunction('Corned Beef Brisket')" class="w3-btn w3-block w3-black w3-left-align">Corned Beef Brisket</button>
+  <button onclick="myAccordion('Corned Beef Brisket')" class="w3-btn w3-block w3-black w3-left-align">Corned Beef Brisket</button>
   <div id="Corned Beef Brisket" class="w3-container w3-hide">
   <h4>Corned Beef Brisket</h4>
   <ul>
@@ -71,7 +71,7 @@
   <p>Serve with rice.</p>
   </div>
 
-  <button onclick="myFunction('Cowboy Stew')" class="w3-btn w3-block w3-black w3-left-align">Cowboy Stew</button>
+  <button onclick="myAccordion('Cowboy Stew')" class="w3-btn w3-block w3-black w3-left-align">Cowboy Stew</button>
   <div id="Cowboy Stew" class="w3-container w3-hide">
   <h4>Cowboy Stew</h4>
   <ul>
@@ -91,7 +91,7 @@
 
 </div>
 <script>
-function myFunction(id) {
+function myAccordion(id) {
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";

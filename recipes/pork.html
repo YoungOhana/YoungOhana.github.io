@@ -29,7 +29,7 @@
     <img src="../images/Yang1275.jpg" width="150" height="150" title="" alt="Young Ohana">
     </header>
     
-  <button onclick="myFunction('Kalua Pork')" class="w3-btn w3-block w3-black w3-left-align">Kalua Pork</button>
+  <button onclick="myAccordion('Kalua Pork')" class="w3-btn w3-block w3-black w3-left-align">Kalua Pork</button>
   <div id="Kalua Pork" class="w3-container w3-hide">
   <h4>Kalua Pork</h4>
 <ul>
@@ -45,7 +45,7 @@
 <p>Serve with poi and Lomi Lomi salmon.</p>
   </div>
 
-  <button onclick="myFunction('Pork Adobo')" class="w3-btn w3-block w3-black w3-left-align">Pork Adobo</button>
+  <button onclick="myAccordion('Pork Adobo')" class="w3-btn w3-block w3-black w3-left-align">Pork Adobo</button>
   <div id="Pork Adobo" class="w3-container w3-hide">
   <h4>Pork Adobo</h4>
 <ul>
@@ -64,7 +64,7 @@
 <p>Serve with rice.</p>
   </div>
   
-  <button onclick="myFunction('Pork Chops')" class="w3-btn w3-block w3-black w3-left-align">Pork Chops</button>
+  <button onclick="myAccordion('Pork Chops')" class="w3-btn w3-block w3-black w3-left-align">Pork Chops</button>
   <div id="Pork Chops" class="w3-container w3-hide">
   <h4>Pork Chops and Mushroom Gravy</h4>
 <ul>
@@ -81,7 +81,7 @@
   </div>
 
 
-  <button onclick="myFunction('Pork Snow Peas')" class="w3-btn w3-block w3-black w3-left-align">Pork Snow Peas</button>
+  <button onclick="myAccordion('Pork Snow Peas')" class="w3-btn w3-block w3-black w3-left-align">Pork Snow Peas</button>
   <div id="Pork Snow Peas" class="w3-container w3-hide">
   <h4>Pork and Chinese Peas Stir-Fry</h4>
 <ul>
@@ -101,7 +101,7 @@
 <p>Serve with rice.</p>
   </div>
 
-  <button onclick="myFunction('Pork Tofu')" class="w3-btn w3-block w3-black w3-left-align">Pork Tofu</button>
+  <button onclick="myAccordion('Pork Tofu')" class="w3-btn w3-block w3-black w3-left-align">Pork Tofu</button>
   <div id="Pork Tofu" class="w3-container w3-hide">
   <h4>Pork Tofu (Buta Dofu)</h4>
 <ul>
@@ -123,7 +123,7 @@
 
   </div>
 
-  <button onclick="myFunction('Pork Seaweed')" class="w3-btn w3-block w3-black w3-left-align">Pork Wrapped in Seaweed</button>
+  <button onclick="myAccordion('Pork Seaweed')" class="w3-btn w3-block w3-black w3-left-align">Pork Wrapped in Seaweed</button>
   <div id="Pork Seaweed" class="w3-container w3-hide">
   <h4>Pork Wrapped in Seaweed (Butaniku Kombu Maki)</h4>
 <ul>
@@ -142,7 +142,7 @@
 
   </div>
   
-  <button onclick="myFunction('Spare Ribs')" class="w3-btn w3-block w3-black w3-left-align">Spare Ribs</button>
+  <button onclick="myAccordion('Spare Ribs')" class="w3-btn w3-block w3-black w3-left-align">Spare Ribs</button>
   <div id="Spare Ribs" class="w3-container w3-hide">
   <h4>Spare Ribs</h4>
 <ul>
@@ -161,7 +161,7 @@
 <p>Serve with rice.</p>
  </div>
 
-  <button onclick="myFunction('Sweet Sour Pork')" class="w3-btn w3-block w3-black w3-left-align">Sweet Sour Pork</button>
+  <button onclick="myAccordion('Sweet Sour Pork')" class="w3-btn w3-block w3-black w3-left-align">Sweet Sour Pork</button>
   <div id="Sweet Sour Pork" class="w3-container w3-hide">
   <h4>Sweet and Sour Pork</h4>
   <ul>
@@ -189,7 +189,7 @@
 
 </div>
 <script>
-function myFunction(id) {
+function myAccordion(id) {
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
