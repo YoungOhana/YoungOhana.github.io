@@ -122,8 +122,86 @@ function myNavigation() {
 <img src="../images/Yang1275.jpg" width="125" height="125" title="Yang" alt="Young Ohana">
 </div>
 
-<div class="article">
-<h2>Shoyu Chicken</h2>
+  <button onclick="myAccordion('Chicken & Vegetables')" class="w3-btn w3-block w3-black w3-left-align">Chicken & Vegetables</button>
+  <div id="Chicken & Vegetables" class="w3-container w3-hide">
+
+<h4>Chicken & Vegetables</h4>
+<ul>
+  <li>1 lb boneless chicken breasts or thighs, sliced</li>
+  <li>1 clove garlic, minced</li>
+  <li>1 onion, sliced</li>
+  <li>1 package frozen green beans</li>
+  <li>1/2 can Campbell's® Chicken Broth</li>
+</ul>
+<p>Saute chicken with garlic and onion on medium heat until chicken is cooked through. Add green beans and chicken broth and heat through.</p>
+
+<p>Serve with rice.</p>
+
+<p>Note: this recipe may be altered by replacing frozen green beans with an appropriate fresh vegetable such as broccoli, Chinese peas or snap peas.</p>
+</div>
+
+  <button onclick="myAccordion('Chicken Long Rice')" class="w3-btn w3-block w3-black w3-left-align">Chicken Long Rice</button>
+  <div id="Chicken Long Rice" class="w3-container w3-hide">
+
+<h4>Chicken Long Rice</h4>
+<ul>
+  <li>1 pound chicken thighs, sliced</li>
+  <li>1 garlic clove, minced</li>
+  <li>grated ginger to taste</li>
+  <li>1 or 2 cans Campbell's® Chicken Broth</li>
+  <li>2 to 4 packages long rice</li>
+  <li>1 small jar of sliced mushrooms</li>
+</ul>
+
+<p>Soak long rice according to package directions. Brown chicken with garlic and ginger in a medium pot. Add 1 can chicken broth, long rice, and mushroom. Bring to a boil and cook until long rice is translucent.</p>
+
+<p>Serve with Chinese peas or snap peas.</p>
+
+</div>
+
+  <button onclick="myAccordion('Chicken Salad')" class="w3-btn w3-block w3-black w3-left-align">Chicken Salad</button>
+  <div id="Chicken Salad" class="w3-container w3-hide">
+
+<h4>Chicken Salad</h4>
+<ul>
+  <li>6 or 7 chicken thighs, deboned and deveined</li>
+  <li>1 or 2 celery stalks, chopped</li>
+  <li>1/2 cup mayonnaise</li>
+</ul>
+<p>Sprinkle each thigh with salt and pepper. Cook thighs in the microwave. Drain and cool thighs in a colander. Remove the skin and chop the meat. Add the celery stalks. Add mayonnaise and mix. Salt and pepper to taste.</p>
+
+<p>Serve on crescent rolls.</p>
+</div>
+
+  <button onclick="myAccordion('Florences Chicken')" class="w3-btn w3-block w3-black w3-left-align">Florence's Chicken</button>
+  <div id="Florences Chicken" class="w3-container w3-hide">
+
+<h4>Florence's Chicken</h4>
+<p>Flour, salt and pepper, chicken (shake in a bag). Deep fry. In pan boil ½ cup sugar, 1 cup shoyu (soy sauce), crushed garlic and ginger. Shake off excess oil from chicken and dunk into marinade sauce.</p>
+</div>
+
+  <button onclick="myAccordion('Mochiko Chicken')" class="w3-btn w3-block w3-black w3-left-align">Mochiko Chicken</button>
+  <div id="Mochiko Chicken" class="w3-container w3-hide">
+
+<h4>Mochiko Chicken</h4>
+<ul>
+  <li>5 lbs deboned chicken thighs or 2-3 lbs beef</li>
+  <li>4 tablespoons cornstarch</li>
+  <li>4 tablespoons mochiko (rice flour)</li>
+  <li>1 tablespoon sesame seed oil</li>
+  <li>1 tablespoon green onions, chopped</li>
+  <li>4 tablespoons sugar</li>
+  <li>5 tablespoons shoyu (soy sauce)</li>
+  <li>1 clove garlic, crushed</li>
+  <li>2 tablespoons sesame seeds</li>
+</ul>
+<p>Combine marinade ingredients. Stir until sugar dissolves. Soak chicken in marinade at least 2 hours or overnight. Mix in sesame seeds before frying. Deep fry on medium heat until golden brown.</p>
+</div>
+
+  <button onclick="myAccordion('Shoyu Chicken')" class="w3-btn w3-block w3-black w3-left-align">Shoyu Chicken</button>
+  <div id="Shoyu Chicken" class="w3-container w3-hide">
+
+<h4>Shoyu Chicken</h4>
 <ul>
   <li>2 pounds chicken thighs</li>
   <li>1 clove garlic, minced</li>
@@ -137,13 +215,21 @@ function myNavigation() {
 
 <p>Serve with rice and vegetables.</p>
 </div>
-
-<div class="footer" id="myfooter">
-    <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
-    <p><a href="https://youngohana.tumblr.com/">YoungOhana at Tumblr</a>
-    <p><a href="https://youngchop.blogspot.com/">YoungOhana at Blogger</a>
-    <p><a href="http://youngohana.tripod.com/">YoungOhana at Tripod</a>
 </div>
+<script>
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+    <footer align="center">
+    <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
+    </footer>
 
 </body>
 </html>
