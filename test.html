@@ -4,27 +4,67 @@
 
 <html lang="en">
   <head>
-    <meta charset=utf-8>
     <title>
       Young Ohana Test Pages
     </title>
+    <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https:/youngohana.github.io/css/w3.css">
+
   </head>
   
   <body>
- 
- <h1>Young Ohana Test Pages</h1>
-    <ul>
-      <li><a href="index.html">YoungOhana</a></li>
-      <li><a href="external_style_sheet.html">external style sheet</a></li>
-      <li><a href="iframe.html">iframe</a></li>
-      <li><a href="layout_float.html">layout float</a></li>
-      <li><a href="responsive_bottom_navbar.html">responsive bottom navbar</a></li>
-      <li><a href=".esponsive_topnav.html">responsive topnav</a></li>
-      <li><a href="textarea.html">textarea</a></li>
-     <li><a href="website_layout.html">website layout</a></li>
-   </ul>
-    
+
+
+<div class="w3-bar w3-dark-grey">
+  <a href="#" class="w3-bar-item w3-button w3-blue">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-hide-small">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Beef</a>
+        <a href="recipes/beef.html" class="w3-bar-item w3-button">beef</a>
+        <a href="#" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="recipes/chicken.html" class="w3-bar-item w3-button w3-hide-small">Chicken</a>
+  <a href="recipes/pork.html" class="w3-bar-item w3-button w3-hide-small">Pork</a>
+  <a href="recipes/seafood.html" class="w3-bar-item w3-button w3-hide-small">Seafood</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myNavigation()">&#9776;</a>
+</div>
+
+<div id="Navigation" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="recipes/beef.html" class="w3-bar-item w3-button">beef</a>
+        <a href="#" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="recipes/chicken.html" class="w3-bar-item w3-button">Chicken</a>
+  <a href="recipes/pork.html" class="w3-bar-item w3-button">Pork</a>
+  <a href="recipes/seafood.html" class="w3-bar-item w3-button">Seafood</a>
+</div>
+
+<div class="w3-container">
+<h1>Collapsing the Navigation Bar</h1>
+  <p>In the example, the navigation bar is replaced with a button (☰) in the top right corner when shown on tablets and mobile devices. When the button is clicked, the links in the bar will vertically stack.</p>
+  <p>Resize the screen to see the effect.</p>
+</div>
+
+<script>
+function myNavigation() {
+    var x = document.getElementById("Navigation");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<div class="w3-container w3-blue">
+<p>I pledge allegiance to the Flag of the United States of America, and to the Republic for which it stands, one Nation under God, indivisible, with liberty and justice for all.</p>
+</div>
+
   </body>
 </html>
