@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<!-- Created on Nov 25, 2018 1:06:38 PM -->
+
+<html lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>
+      Young Ohana Recipes - Beef
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https:/youngohana.github.io/css/w3.css">
+  </head>
+  
+  <body>
+<div class="w3-bar w3-dark-grey">
+  <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-hide-small w3-blue">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="#" class="w3-bar-item w3-button">Beef</a>
+        <a href="beef.html" class="w3-bar-item w3-button">beef</a>
+        <a href="#" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="chicken.html" class="w3-bar-item w3-button w3-hide-small">Chicken</a>
+  <a href="pork.html" class="w3-bar-item w3-button w3-hide-small">Pork</a>
+  <a href="seafood.html" class="w3-bar-item w3-button w3-hide-small">Seafood</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myNavigation()">&#9776;</a>
+</div>
+
+<div id="Navigation" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-blue">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="beef.html" class="w3-bar-item w3-button">beef</a>
+        <a href="#" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="chicken.html" class="w3-bar-item w3-button">Chicken</a>
+  <a href="pork.html" class="w3-bar-item w3-button">Pork</a>
+  <a href="seafood.html" class="w3-bar-item w3-button">Seafood</a>
+</div>
+
+<script>
+function myNavigation() {
+    var x = document.getElementById("Navigation");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+    <div class="header" id="myheader" align="center">
+    <h2>Young Ohana Recipes - Beef</h2>
+    <p><img src="../images/Yang1275.jpg" width="150" height="150" title="" alt="Young Ohana"></p>
+    </div>
+    
+    <div class="w3-container">
+ 
+   <button onclick="myAccordion('Casserole')" class="w3-btn w3-block w3-dark-grey w3-left-align">Casserole</button>
+  <div id="Casserole" class="w3-container w3-card-4 w3-hide">
+  <h4>Casserole</h4>
+<ul>
+  <li>1 package elbow macaroni</li>
+  <li>1 pound ground beef</li>
+  <li>1 onion, chopped</li>
+  <li>1 clove garlic, chopped</li>
+  <li>1 can Hunt's® Diced Tomatoes</li>
+  <li>1 can Hunt's® Tomato Sauce</li>
+</ul>
+<p>Cook macaroni according to package directions.</p>
+<p>Brown ground beef with onion and garlic. Add diced tomatoes and tomato sauce and macaroni and heat through or bake in the oven for 20 minutes at 325 degrees.</p>
+<p>Serve with garlic bread or French bread.</p>
+
+  </div>
+   
+  <button onclick="myAccordion('Chili')" class="w3-btn w3-block w3-dark-grey w3-left-align">Chili</button>
+  <div id="Chili" class="w3-container w3-card-4 w3-hide">
+  <h4>Chili</h4>
+<ul>
+  <li>2 pounds ground beef</li>
+  <li>1 onion, chopped</li>
+  <li>1 clove garlic, chopped</li>
+  <li>1 package Carroll Shelby's® Chili Kit</li>
+  <li>2 cans dark red kidney beans, drained</li>
+  <li>1 can Hunt's® Diced Tomatoes</li>
+  <li>1 can Hunt's® Tomato Sauce</li>
+</ul>
+
+<p>Brown ground beef with onion and garlic. Add flavor packets from kit leaving out flour packet. Add dark red kidney beans, diced tomatoes, and tomato sauce and simmer for 15 minutes.</p>
+<p>Serve over rice with your favorite fixings such as grated cheese or diced onions.</p>
+
+  </div>
+
+  <button onclick="myAccordion('Chip N Dip')" class="w3-btn w3-block w3-dark-grey w3-left-align">Chip N Dip</button>
+  <div id="Chip N Dip" class="w3-container w3-card-4 w3-hide">
+  <h4>Chip N Dip</h4>
+<ul>
+  <li>1 pound ground beef</li>
+  <li>1 onion, chopped</li>
+  <li>1 clove garlic, chopped</li>
+  <li>ketchup</li>
+  <li>tortilla chips</li>
+  <li>salsa</li>
+  <li>sharp cheddar cheese, grated</li>
+</ul>
+<p>Brown ground beef with onion and garlic. Add ketchup to taste. Serve with chips, salsa, and grated cheese.</p>
+
+  </div>
+
+  <button onclick="myAccordion('Cottage Pie')" class="w3-btn w3-block w3-dark-grey w3-left-align">Cottage Pie</button>
+  <div id="Cottage Pie" class="w3-container w3-card-4 w3-hide">
+  <h4>Cottage Pie</h4>
+<ul>
+  <li>1 lb ground beef</li>
+  <li>1 onion, chopped</li>
+  <li>1 cloves garlic, minced</li>
+  <li>1 can Campbell's® Cream of Mushroom Soup</li>
+  <li>1 package frozen green beans or peas</li>
+  <li>mashed potatoes</li>
+  <li>1 cup cheddar or parmesan cheese</li>
+</ul>
+<p>Brown ground beef with onion and garlic. Add mushroom soup and green beans and mix. Transfer to 9" x 12" baking dish. Spread mashed potatoes on top. Spread cheese on top of potatoes. Bake at 350 degrees for 30 minutes.</p>
+<p>Serve with tossed salad and French bread.</p>
+
+  </div>
+ 
+ </div>
+    
+    <div class="footer" id="myfooter" align="center">
+    <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
+    </div>
+
+<script>
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+  </body>
+</html>
