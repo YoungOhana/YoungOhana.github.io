@@ -71,6 +71,17 @@ function myNavigation() {
     <div class="footer" id="myfooter" align="center">
     <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
     </div>
+    
+<script>
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html> 
