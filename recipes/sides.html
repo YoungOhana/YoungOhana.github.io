@@ -1,25 +1,116 @@
 <!DOCTYPE html>
 
-<!-- Created on Nov 25, 2018 2:28:01 PM -->
+<!-- Created on Dec 23, 2018 9:45:09 pm -->
 
 <html lang="en">
 
 <head>
-<title>W3.CSS</title>
+<title>Young Ohana Recipes List</title>
 <meta charset=utf-8 />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https:/youngohana.github.io/css/w3.css">
+    <link rel="stylesheet" href="../css/w3.css">
 </head>
-
 <body>
 
-<header class="w3-container w3-teal">
-  <h1>Header</h1>
-</header>
-
-<div class="w3-container">
-  <p>The w3-container class can be used to display headers.</p>
+<div class="w3-bar w3-dark-grey">
+  <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-hide-small">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="#" class="w3-bar-item w3-button">Beef</a>
+        <a href="beef.html" class="w3-bar-item w3-button">beef</a>
+        <a href="gbeef.html" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="chicken.html" class="w3-bar-item w3-button w3-hide-small">Chicken</a>
+  <a href="pork.html" class="w3-bar-item w3-button w3-hide-small">Pork</a>
+  <a href="seafood.html" class="w3-bar-item w3-button w3-hide-small">Seafood</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-blue">Sides</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myNavigation()">&#9776;</a>
 </div>
+
+<div id="Navigation" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="beef.html" class="w3-bar-item w3-button">beef</a>
+        <a href="gbeef.html" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="chicken.html" class="w3-bar-item w3-button">Chicken</a>
+  <a href="pork.html" class="w3-bar-item w3-button">Pork</a>
+  <a href="seafood.html" class="w3-bar-item w3-button">Seafood</a>
+  <a href="#" class="w3-bar-item w3-button w3-blue">Sides</a>
+</div>
+
+<script>
+function myNavigation() {
+    var x = document.getElementById("Navigation");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+    <div class="header" id="myheader" align="center">
+    <h2>Young Ohana Recipes</h2>
+    <p><img src="../images/Yang1275.jpg" width="150" height="150" title="" alt="Young Ohana"></p>
+    </div>
+
+    <div class="w3-container">
+
+  <button onclick="myAccordion('Oven Candied Yams')" class="w3-btn w3-block w3-dark-grey w3-left-align">Oven Candied Yams</button>
+  <div id="Oven Candied Yams" class="w3-container w3-card-4 w3-hide">
+  <h4>Oven Candied Yams</h4>
+<ul>
+  <li>8 medium yams, scrubbed</li>
+  <li>2/3 cup packed brown sugar</li>
+  <li>1/2 cup butter or margarine</li>
+  <li>1/2 teaspoon salt</li>
+  <li>2 cups tiny marshmallows</li>
+</ul>
+
+<p>Remove ends of yams and place in pot. Cover with water and bring to a boil. Simmer about 30 minutes until tender. Drain and peel and slice 1/2" slices. Cover the bottom of a 9-inch by 12-inch pan with half of the yams. Sprinkle with half of the brown sugar, butter, and salt. Repeat the layer of yams, brown sugar, butter, and salt. Bake for 30 minutes at 375 degrees. Sprinkle with marshmallows. Bake about 5 minutes more or until browned.</p>
+
+  </div>
+
+  <button onclick="myAccordion('Potato Salad')" class="w3-btn w3-block w3-dark-grey w3-left-align">Potato Salad</button>
+  <div id="Potato Salad" class="w3-container w3-card-4 w3-hide">
+  <h4>Potato Salad</h4>
+  <ul>
+    <li>6 medium red potatoes</li>
+    <li>1 cup Best Foods® mayonnaise</li>
+    <li>3 tbsps sweet pickle relish</li>
+    <li>1 tsp mustard</li>
+    <li>1 tsp salt</li>
+    <li>dash pepper</li>
+    <li>1 small Maui onion, chopped</li>
+    <li>2 hard cooked eggs, chopped</li>
+    <li>paprika</li>
+  </ul>
+
+  <p>Scrub red potatoes. Put potatoes in a pot and cover with water. Bring water
+to boil on medium-high heat. Turn heat down to medium and simmer for half an hour to an hour or until the potatoes can be poked easily with a fork. Drain potatoes, peel, and cube into bite-size pieces. Add the rest of the ingredients and mix until potatoes are well coated. Cover and refrigerate. Sprinkle with paprika before serving.</p>
+
+    </div>
+
+  </div>
+    <div class="footer" id="myfooter" align="center">
+    <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
+    </div>
+    
+<script>
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html> 
