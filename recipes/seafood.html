@@ -58,19 +58,51 @@ function myNavigation() {
     <h2>Young Ohana Recipes - Seafood</h2>
     <p><img src="../images/Yang1275.jpg" width="150" height="150" title="" alt="Young Ohana"></p>
     </div>
-
+ 
     <div class="w3-container">
-<div class="w3-container w3-card-4" id="myrecipe">
-<h4>Garlic Butter Mahimahi</h4>
-<ul>
-  <li>1 lb mahimahi fillet</li>
-  <li>1 garlic clove, sliced</li>
-  <li>1 tsp butter or margarine</li>
-</ul>
+    
+  <button onclick="myAccordion('Garlic Butter Mahimahi')" class="w3-btn w3-block w3-dark-grey w3-left-align">Garlic Butter Mahimahi</button>
+  <div id="Garlic Butter Mahimahi" class="w3-container w3-card-4 w3-hide">
+  <h4>Garlic Butter Mahimahi</h4>
+  <ul>
+    <li>1 lb mahimahi fillet</li>
+    <li>1 garlic clove, sliced</li>
+    <li>1 tsp butter or margarine</li>
+  </ul>
 
-<p>Oil medium pot. Add mahimahi fillet to pot, skin side down. Sprinkle garlic and butter on top. Cook for 20 minutes on medium-low heat or until flaky.</p>
+  <p>Oil medium pot. Add mahimahi fillet to pot, skin side down. Sprinkle garlic and butter on top. Cook for 20 minutes on medium-low heat or until flaky.</p>
+  </div>
+
+  <button onclick="myAccordion('Lemon Pepper Salmon')" class="w3-btn w3-block w3-dark-grey w3-left-align">Lemon Pepper Salmon</button>
+  <div id="Lemon Pepper Salmon" class="w3-container w3-card-4 w3-hide">
+  <h4>Lemon Pepper Salmon</h4>
+  <ul>
+  <li>1 pound of wild Pacific salmon fillet</li>
+    <li>1 tbsp butter </li>
+    <li>1 tbsp olive oil</li>
+    <li>lemon pepper seasoning</li>
+    <li>1 clove garlic, chopped</li>
+    <li>1 bunch spinach washed</li>
+  </ul>
+
+  <p>Heat fry pan on medium. Add garlic and olive oil to a pan and cook until fragrant. Add butter and cook until melted. Sprinkle lemon pepper seasoning on salmon to taste. Add salmon to pan skin side down and cook for 9 to 10 minutes on each side. Add spinach to pan for last 1 to 2 minutes.</p>
+  <p>Serve with rice.</p>
+
+  </div>
+  
+  
 </div>
-</div>
+
+<script>
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
     <div class="footer" id="myfooter" align="center">
     <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
