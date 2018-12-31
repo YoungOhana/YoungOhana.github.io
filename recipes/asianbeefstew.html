@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!-- Created on Dec 30, 2018 1:06:38 PM -->
+
+<html lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>
+      Asian Beef Stew - Young Ohana Recipes
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/w3.css">
+  </head>
+  
+  <body>
+<div class="w3-bar w3-dark-grey">
+  <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-hide-small w3-blue">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="#" class="w3-bar-item w3-button">Beef</a>
+        <a href="beef.html" class="w3-bar-item w3-button w3-blue">beef</a>
+        <a href="gbeef.html" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="pork.html" class="w3-bar-item w3-button w3-hide-small">Pork</a>
+  <a href="poultry.html" class="w3-bar-item w3-button w3-hide-small">Poultry</a>
+  <a href="seafood.html" class="w3-bar-item w3-button w3-hide-small">Seafood</a>
+  <a href="sides.html" class="w3-bar-item w3-button w3-hide-small">Sides</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myNavigation()">&#9776;</a>
+</div>
+
+<div id="Navigation" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-blue">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="beef.html" class="w3-bar-item w3-button w3-blue">beef</a>
+        <a href="gbeef.html" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="pork.html" class="w3-bar-item w3-button">Pork</a>
+  <a href="poultry.html" class="w3-bar-item w3-button">Poultry</a>
+  <a href="#" class="w3-bar-item w3-button">Poultry</a>
+  <a href="sides.html" class="w3-bar-item w3-button">Sides</a>
+</div>
+
+<script>
+function myNavigation() {
+    var x = document.getElementById("Navigation");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+    <div class="header" id="myheader" align="center">
+    <h2>Asian Beef Stew - Young Ohana Recipes</h2>
+    <p><img src="../images/Yang1275.jpg" width="150" height="150" title="" alt="Young Ohana"></p>
+    </div>
+    
+<div class="w3-container">
+<div class="w3-container w3-card-4" id="Mechado">
+
+  <h3>Asian Beef Stew</h3>
+  <ul>
+  <li>2 pounds potatoes, peeled and sliced 1/2 inch thick</li>
+    <li>1 pound carrots, washed and chopped 1 inch long</li>
+    <li>1 onion, sliced thin</li>
+    <li>3 pounds stew meat</li>
+    <li>1 cup orange juice</li>
+    <li>3 cups low sodium beef broth</li>
+    <li>3 tablespoons soy sauce</li>
+    <li>2 tablespoons hoisin sauce</li>
+    <li>1 teaspoon Asian chili paste</li>
+    <li>3 tablespoons cornstarch</li>
+  </ul>
+	<p>Layer potatoes, carrots, onion, and beef in a 5 to 6-quart slow cooker. Whisk together remaining ingredients and add to slow cooker. Cover slow cooker and cook on high heat 5 hours.</p>
+  <p>Serve with hot rice.</p>
+
+   </div>
+   </div>
+    
+    
+    <div class="footer" id="myfooter" align="center">
+    <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
+    </div>
+
+<script>
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+  </body>
+</html>
