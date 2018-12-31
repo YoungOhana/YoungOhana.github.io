@@ -63,7 +63,8 @@ function myNavigation() {
     </div>
 
 <div class="w3-container">
-<div class="w3-container w3-card-4" id="Law">
+  <button onclick="myAccordion('Crustless Quiche')" class="w3-btn w3-block w3-dark-grey w3-left-align">Crustless Quiche</button>
+  <div id="Crustless Quiche" class="w3-container w3-card-4 w3-hide">
 <h3>Crustless Quiche</h3>
 <ul>
   <li>1/2 c Butter</li>
@@ -82,7 +83,10 @@ function myNavigation() {
   <li>Bake at 400 degrees Fahrenheit for 15 minutes. Then reduce temperature to 350 degrees Fahrenheit, and continue to bake for 35 to 40 minutes, or until the top is lightly browned.</li>
   <li>Cool, and cut into squares for serving.</li>
 </ol>
+</div>
 
+  <button onclick="myAccordion('Half Crustless Quiche')" class="w3-btn w3-block w3-dark-grey w3-left-align">Half Crustless Quiche</button>
+  <div id="Half Crustless Quiche" class="w3-container w3-card-4 w3-hide">
 <h3>Half Crustless Quiche</h3>
 <ul>
   <li>1/2 c Butter</li>
@@ -114,6 +118,16 @@ Some flavor combinations:
 <div class="footer" id="myfooter" align="center">
     <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
 </div>
+<script>
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html>
