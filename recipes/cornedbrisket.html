@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!-- Created on Dec 30, 2018 1:06:38 PM -->
+
+<html lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>
+      Corned Beef Brisket  - Young Ohana Recipes
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/w3.css">
+  </head>
+  
+  <body>
+<div class="w3-bar w3-dark-grey">
+  <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-hide-small w3-blue">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="#" class="w3-bar-item w3-button">Beef</a>
+        <a href="beef.html" class="w3-bar-item w3-button w3-blue">beef</a>
+        <a href="gbeef.html" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="pork.html" class="w3-bar-item w3-button w3-hide-small">Pork</a>
+  <a href="poultry.html" class="w3-bar-item w3-button w3-hide-small">Poultry</a>
+  <a href="seafood.html" class="w3-bar-item w3-button w3-hide-small">Seafood</a>
+  <a href="sides.html" class="w3-bar-item w3-button w3-hide-small">Sides</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myNavigation()">&#9776;</a>
+</div>
+
+<div id="Navigation" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-blue">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="beef.html" class="w3-bar-item w3-button w3-blue">beef</a>
+        <a href="gbeef.html" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="pork.html" class="w3-bar-item w3-button">Pork</a>
+  <a href="poultry.html" class="w3-bar-item w3-button">Poultry</a>
+  <a href="#" class="w3-bar-item w3-button">Poultry</a>
+  <a href="sides.html" class="w3-bar-item w3-button">Sides</a>
+</div>
+
+<script>
+function myNavigation() {
+    var x = document.getElementById("Navigation");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+    <div class="header" id="myheader" align="center">
+    <h2>Corned Beef Brisket - Young Ohana Recipes</h2>
+    <p><img src="../images/Yang1275.jpg" width="150" height="150" title="" alt="Young Ohana"></p>
+    </div>
+    
+<div class="w3-container">
+<div class="w3-container w3-card-4" id="myrecipe">
+
+  <h3>Corned Beef Brisket</h3>
+<ul>
+  <li>3-5 lbs corned beef brisket, rinsed</li>
+  <li>3-5 potatoes, peeled and cut into 2" slices</li>
+  <li>1 head cabbage, cut into 2" wedges</li>
+  <li>1-2 cans white asparagus</li>
+  <li>1 bay leaf</li>
+  <li>sprinkle of oregano</li>
+  <li>sprinkle peppercorns</li>
+  <li>sprinkle of thyme</li>
+</ul>
+<p>Cover brisket with water in a large pot or casserole. Add spices. Bring water to a boil and remove from heat. Wipe the inside of pot or casserole with a paper towel, being careful not to burn your fingers. Return pot to heat and simmer for 45 minutes per pound. Before the last 45 minutes of cooking time, adjust soup for saltiness by removing liquid and adding water if necessary. Add potatoes for the last 45 minutes of cooking time and the cabbage and asparagus for the last 15 minutes of cooking time.</p>
+<p>Serve with rice.</p>
+ 
+   </div>
+   </div>
+    
+    <div class="footer" id="myfooter" align="center">
+    <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
+    </div>
+
+<script>
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+  </body>
+</html>
