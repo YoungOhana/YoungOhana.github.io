@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!-- Created on Jul 13, 2020 6:06:35 PM -->
+
+<html lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>
+      Chicken Curry - Young Ohana Recipes
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/w3.css">
+  </head>
+  
+  <body>
+<div class="w3-bar w3-dark-grey">
+  <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-bar-item w3-button w3-hide-small">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="#" class="w3-bar-item w3-button">Beef</a>
+        <a href="beef.html" class="w3-bar-item w3-button">beef</a>
+        <a href="gbeef.html" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="pork.html" class="w3-bar-item w3-button w3-hide-small">Pork</a>
+  <a href="poultry.html" class="w3-bar-item w3-button w3-hide-small">Poultry</a>
+  <a href="seafood.html" class="w3-bar-item w3-button w3-hide-small">Seafood</a>
+  <a href="sides.html" class="w3-bar-item w3-button w3-hide-small">Sides</a>
+  <a href="dessert.html" class="w3-bar-item w3-button w3-hide-small">Dessert</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-right">Index</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myNavigation()">&#9776;</a>
+</div>
+
+<div id="Navigation" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-blue">Beef</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
+        <a href="beef.html" class="w3-bar-item w3-button w3-blue">beef</a>
+        <a href="gbeef.html" class="w3-bar-item w3-button">ground beef</a>
+      </div>
+    </div>
+  <a href="pork.html" class="w3-bar-item w3-button">Pork</a>
+  <a href="poultry.html" class="w3-bar-item w3-button">Poultry</a>
+  <a href="seafood.html" class="w3-bar-item w3-button">Seafood</a>
+  <a href="sides.html" class="w3-bar-item w3-button">Sides</a>
+  <a href="dessert.html" class="w3-bar-item w3-button">Dessert</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-right">Index</a>
+</div>
+
+<script>
+function myNavigation() {
+    var x = document.getElementById("Navigation");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+    <div class="header" id="myheader" align="center">
+    <h2>Chicken Curry - Young Ohana Recipes</h2>
+    <p><img src="../images/Yang1275.jpg" width="150" height="150" title="" alt="Young Ohana"></p>
+    </div>
+    
+<div class="w3-container">
+<div class="w3-container w3-card-4" id="yorecipe" class="hrecipe">
+
+  <h3 class="fn">Chicken Curry</h3>
+<ul class="ingredients">
+  <li>1 box House Vermont Curry Sauce Mix	 </li>
+  <li>1 lb Chicken thighs cubed	 </li>
+  <li>1 onion cubed	 </li>
+  <li>3 potatoes cubed	 </li>
+  <li>1 carrot sliced</li>
+  <li>1 tablespoon vegetable oil</li>
+</ul>
+
+<ol class="instructions">
+  <li>Saute ingredients: Preheat oil in a pot, add bite-size pieces of meat and vegetables, and sauté well or until the onions are lightly browned</li>  
+  <li>Add water and simmer: Add about 3 1/2 cups water and simmer until ingredients soften (about 15 minutes).</li>  
+  <li>Add curry sauce mix: Break apart curry sauce mix into the pot and stir until dissolved.</li>  
+  <li>Simmer: Simmer once more, stirring occasionally (about 10 minutes) or until curry thickens.</li>
+  <li>Optional add honey: Add it in Step 2, and after bringing the curry to a boil, simmer at least 20 minutes.</li>
+  <li>Note: May replace chicken with other meat.</li>
+</ol>
+
+   </div>
+   </div>
+    
+    <div class="footer" id="myfooter" align="center">
+    <p><a href="https://youngohana.github.io/">YoungOhana at Github</a>
+    </div>
+
+<script>
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+  </body>
+</html>
